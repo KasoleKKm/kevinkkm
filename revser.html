@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel KKM</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Resevation</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="statut">Statut matrimonial :</label>
+                <select id="statut" name="statut" required>
+                    <option value="celibataire">Célibataire</option>
+                    <option value="marie">Marié</option>
+                    <option value="divorce">Divorcé</option>
+                    <option value="veuf">Veuf</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="enfants">Nombre d'enfants :</label>
+                <input type="number" id="enfants" name="enfants" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="categorie">Catégorie de la suite :</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="standard">Standard</option>
+                    <option value="luxury">Luxe</option>
+                    <option value="presidential">Présidentielle</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="periode">Période de réservation :</label>
+                <input type="text" id="periode" name="periode" placeholder="Ex: 01/11/2021 - 13/09/2024" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Réserver">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
